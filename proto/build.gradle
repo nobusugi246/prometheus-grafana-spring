@@ -1,13 +1,13 @@
 buildscript {
-	ext {
-		springBootVersion = '1.5.10.RELEASE'
-	}
-	repositories {
-		mavenCentral()
-	}
-	dependencies {
-		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-	}
+    ext {
+        springBootVersion = '1.5.10.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
 }
 
 apply plugin: 'java'
@@ -19,17 +19,17 @@ version = '0.1.0'
 sourceCompatibility = 1.8
 
 repositories {
-	repositories {
- 	    maven { url 'https://repo.spring.io/libs-snapshot' }
-	}
-	mavenCentral()
+    repositories {
+        maven { url 'https://repo.spring.io/libs-snapshot' }
+    }
+    mavenCentral()
 }
 
 dependencies {
-	compile 'org.springframework.boot:spring-boot-starter-web'
-	compile 'org.springframework.boot:spring-boot-starter-actuator'
-	compile 'io.micrometer:micrometer-spring-legacy:1.0.0-rc.9'
-	compile 'io.micrometer:micrometer-registry-prometheus:1.0.0-rc.9'
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    compile 'org.springframework.boot:spring-boot-starter-actuator'
+    compile 'io.micrometer:micrometer-spring-legacy:1.0.0-rc.9'
+    compile 'io.micrometer:micrometer-registry-prometheus:1.0.0-rc.9'
 
-	testCompile 'org.springframework.boot:spring-boot-starter-test'
+    testCompile 'org.springframework.boot:spring-boot-starter-test'
 }
