@@ -1,7 +1,7 @@
 Simple Grafana Dashboard for Spring Actuator Micrometer.
 ====
 
-![Grafana Dashboard](images/MicrometerDashboard.jpg)
+![Grafana Dashboard](https://github.com/nobusugi246/prometheus-grafana-spring-mac/master/images/MicrometerDashboard.jpg)
 
 Spring Boot Configuration
 ----
