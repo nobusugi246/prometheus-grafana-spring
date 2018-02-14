@@ -34,4 +34,4 @@ scrape_configs:
 Grafana Configuration
 ----
 
-Import `Java Micrometer Basics.json` to you Grafana Server.
+Import `Java Micrometer Basics.json` to you Grafana Server or find this on Grafana.com.
