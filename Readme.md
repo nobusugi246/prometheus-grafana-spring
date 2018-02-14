@@ -31,3 +31,7 @@ scrape_configs:
         - 'docker.for.mac.host.internal:8080'
 ```
 
+Grafana Configuration
+----
+
+Import `Java Micrometer Basics.json` to you Grafana Server.
