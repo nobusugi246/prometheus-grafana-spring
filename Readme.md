@@ -6,7 +6,7 @@ Simple Grafana Dashboard for Spring Actuator Micrometer.
 Spring Boot Configuration
 ----
 
-```
+```gradle
 dependencies {
     ...
     compile 'org.springframework.boot:spring-boot-starter-actuator'
@@ -18,7 +18,7 @@ dependencies {
 Prometheus Configuration
 ----
 
-```
+```yaml
 scrape_configs:
   - job_name: 'prometheus'
     static_configs:
