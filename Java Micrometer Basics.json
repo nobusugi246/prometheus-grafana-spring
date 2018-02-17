@@ -113,10 +113,10 @@
             "lineColor": "rgb(31, 120, 193)",
             "show": false
           },
-          "tableColumn": "",
+          "tableColumn": "__name__",
           "targets": [
             {
-              "expr": "process_uptime_seconds",
+              "expr": "sum (process_uptime_seconds)",
               "format": "time_series",
               "intervalFactor": 2,
               "refId": "A"
@@ -341,7 +341,7 @@
           "tableColumn": "",
           "targets": [
             {
-              "expr": "jvm_threads_peak",
+              "expr": "sum (jvm_threads_peak)",
               "format": "time_series",
               "intervalFactor": 2,
               "refId": "A"
@@ -385,7 +385,7 @@
             "current": false,
             "max": false,
             "min": false,
-            "show": false,
+            "show": true,
             "total": false,
             "values": false
           },
@@ -407,7 +407,7 @@
               "expr": "process_cpu_usage",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "cpu usage",
+              "legendFormat": "{{job}}",
               "refId": "A"
             }
           ],
@@ -460,7 +460,7 @@
             "current": false,
             "max": false,
             "min": false,
-            "show": false,
+            "show": true,
             "total": false,
             "values": false
           },
@@ -482,7 +482,7 @@
               "expr": "jvm_threads_live",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "jvm_threads_live",
+              "legendFormat": "{{job}}",
               "refId": "A"
             }
           ],
@@ -569,7 +569,7 @@
               "expr": "jvm_gc_pause_seconds_count",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{action}} / {{cause}}",
+              "legendFormat": "{{action}} / {{cause}} ({{job}})",
               "refId": "A"
             }
           ],
@@ -644,14 +644,14 @@
               "expr": "jvm_gc_live_data_size_bytes",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "live",
+              "legendFormat": "live ({{job}})",
               "refId": "A"
             },
             {
               "expr": "jvm_gc_max_data_size_bytes",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "max",
+              "legendFormat": "max ({{job}})",
               "refId": "B"
             }
           ],
@@ -738,7 +738,7 @@
               "expr": "jvm_memory_used_bytes",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{id}} / {{area}}",
+              "legendFormat": "{{id}} / {{area}} ({{job}})",
               "refId": "A"
             }
           ],
@@ -793,7 +793,7 @@
             "max": false,
             "min": false,
             "rightSide": false,
-            "show": false,
+            "show": true,
             "total": false,
             "values": false
           },
@@ -815,7 +815,7 @@
               "expr": "jvm_gc_memory_promoted_bytes_total",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "gc promoted total",
+              "legendFormat": " {{job}}",
               "refId": "A"
             }
           ],
@@ -871,7 +871,7 @@
     "list": []
   },
   "time": {
-    "from": "now-30m",
+    "from": "now-15m",
     "to": "now"
   },
   "timepicker": {
@@ -901,5 +901,5 @@
   },
   "timezone": "",
   "title": "Java Micrometer Basics",
-  "version": 9
+  "version": 13
 }
