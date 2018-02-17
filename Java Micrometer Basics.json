@@ -123,7 +123,7 @@
             }
           ],
           "thresholds": "",
-          "title": "Process Uptime",
+          "title": "Sum of Process Uptime",
           "type": "singlestat",
           "valueFontSize": "80%",
           "valueMaps": [
@@ -198,7 +198,7 @@
             }
           ],
           "thresholds": "",
-          "title": "Process CPU Seconds Total",
+          "title": "Sum of Process CPU Seconds",
           "type": "singlestat",
           "valueFontSize": "80%",
           "valueMaps": [
@@ -226,7 +226,7 @@
             "minValue": 0,
             "show": false,
             "thresholdLabels": false,
-            "thresholdMarkers": true
+            "thresholdMarkers": false
           },
           "id": 10,
           "interval": null,
@@ -266,14 +266,14 @@
           "tableColumn": "",
           "targets": [
             {
-              "expr": "process_resident_memory_bytes",
+              "expr": "sum (jvm_gc_live_data_size_bytes)",
               "format": "time_series",
               "intervalFactor": 2,
               "refId": "A"
             }
           ],
           "thresholds": "",
-          "title": "Process Memory",
+          "title": "Sum of Live Heap Memory",
           "type": "singlestat",
           "valueFontSize": "80%",
           "valueMaps": [
@@ -348,7 +348,7 @@
             }
           ],
           "thresholds": "",
-          "title": "JVM Threads Peak",
+          "title": "Sum of JVM Threads Peak",
           "type": "singlestat",
           "valueFontSize": "80%",
           "valueMaps": [
@@ -871,7 +871,7 @@
     "list": []
   },
   "time": {
-    "from": "now-15m",
+    "from": "now-5m",
     "to": "now"
   },
   "timepicker": {
@@ -901,5 +901,5 @@
   },
   "timezone": "",
   "title": "Java Micrometer Basics",
-  "version": 13
+  "version": 16
 }
