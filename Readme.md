@@ -50,7 +50,7 @@ You should change `docker.for.mac.host.internal` to the host address.
 Grafana Configuration
 ----
 
-Import `Java Micrometer Basics.json` to you Grafana Server or find this Dashboard(ID: 4683) on Grafana.com.
+Import `Java Micrometer Basics.json` to your Grafana Server or find this Dashboard(ID: 4683) on Grafana.com.
 
 
 Spring Boot Configuration
