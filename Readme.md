@@ -28,7 +28,7 @@ services:
 ```
 
 
-Prometheus Configuration
+Prometheus Configuration (e.g. Docker for Mac)
 ----
 
 ```yaml
@@ -48,7 +48,7 @@ scrape_configs:
 Grafana Configuration
 ----
 
-Import `Java Micrometer Basics.json` to you Grafana Server or find this Dashboard on Grafana.com.
+Import `Java Micrometer Basics.json` to you Grafana Server or find this Dashboard(ID: 4683) on Grafana.com.
 
 
 Spring Boot Configuration
