@@ -266,7 +266,7 @@
           "tableColumn": "",
           "targets": [
             {
-              "expr": "process_virtual_memory_bytes",
+              "expr": "process_resident_memory_bytes",
               "format": "time_series",
               "intervalFactor": 2,
               "refId": "A"
@@ -871,7 +871,7 @@
     "list": []
   },
   "time": {
-    "from": "now-1h",
+    "from": "now-30m",
     "to": "now"
   },
   "timepicker": {
@@ -901,5 +901,5 @@
   },
   "timezone": "",
   "title": "Java Micrometer Basics",
-  "version": 7
+  "version": 9
 }
