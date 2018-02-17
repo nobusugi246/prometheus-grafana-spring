@@ -44,6 +44,8 @@ scrape_configs:
         - 'docker.for.mac.host.internal:8080'
 ```
 
+You shoud change `docker.for.mac.host.internal` to the host address.
+
 
 Grafana Configuration
 ----
