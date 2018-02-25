@@ -60,8 +60,8 @@ Spring Boot Configuration
 dependencies {
     ...
     compile 'org.springframework.boot:spring-boot-starter-actuator'
-    compile 'io.micrometer:micrometer-spring-legacy:1.0.0-rc.9'
-    compile 'io.micrometer:micrometer-registry-prometheus:1.0.0-rc.9'  // You should add this line for prometheus.
+    compile 'io.micrometer:micrometer-spring-legacy:1.0.0'
+    compile 'io.micrometer:micrometer-registry-prometheus:1.0.0'  // You should add this line for prometheus.
     ...
 ```
 
