@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        springBootVersion = '1.5.10.RELEASE'
+        springBootVersion = '1.5.12.RELEASE'
     }
     repositories {
         mavenCentral()
@@ -28,8 +28,8 @@ repositories {
 dependencies {
     compile 'org.springframework.boot:spring-boot-starter-web'
     compile 'org.springframework.boot:spring-boot-starter-actuator'
-    compile 'io.micrometer:micrometer-spring-legacy:1.0.2'
-    compile 'io.micrometer:micrometer-registry-prometheus:1.0.2'
+    compile 'io.micrometer:micrometer-spring-legacy:1.0.3'
+    compile 'io.micrometer:micrometer-registry-prometheus:1.0.3'
 
     testCompile 'org.springframework.boot:spring-boot-starter-test'
 }
