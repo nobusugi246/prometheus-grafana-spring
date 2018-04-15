@@ -19,7 +19,7 @@ services:
     ports:
       - 9090:9090
   grafana:
-    image: grafana/grafana:5.0.3
+    image: grafana/grafana:5.0.4
     container_name: grafana
     ports:
       - 3000:3000
@@ -60,9 +60,9 @@ Spring Boot Configuration
 dependencies {
     ...
     compile 'org.springframework.boot:spring-boot-starter-actuator'
-    compile 'io.micrometer:micrometer-spring-legacy:1.0.2'
-    compile 'io.micrometer:micrometer-registry-prometheus:1.0.2'  // You should add this line for prometheus.
+    compile 'io.micrometer:micrometer-spring-legacy:1.0.3'
+    compile 'io.micrometer:micrometer-registry-prometheus:1.0.3'  // You should add this line for prometheus.
     ...
 ```
 
-You can start a sample project of Spring Boot (Ver.1.5.10) with this `proto` folder outside of containers.
+You can start a sample project of Spring Boot (Ver.1.5.12) with this `proto` folder outside of containers.
