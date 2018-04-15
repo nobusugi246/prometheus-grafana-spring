@@ -65,4 +65,4 @@ dependencies {
     ...
 ```
 
-You can start a sample project of Spring Boot (Ver.1.5.12) with this `proto` folder outside of containers.
+You can start a sample project of Spring Boot (Ver.2.0.1) with this `proto` folder outside of containers.
