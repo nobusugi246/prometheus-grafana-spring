@@ -12,14 +12,14 @@ You can start Prometheus and Grafana Containers with this docker-compose.yml.
 version: '3'
 services:
   prometheus:
-    image: prom/prometheus:v2.2.1
+    image: prom/prometheus:v2.3.0
     container_name: prometheus
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
     ports:
       - 9090:9090
   grafana:
-    image: grafana/grafana:5.0.4
+    image: grafana/grafana:5.1.3
     container_name: grafana
     ports:
       - 3000:3000
@@ -60,9 +60,9 @@ Spring Boot Configuration
 dependencies {
     ...
     compile 'org.springframework.boot:spring-boot-starter-actuator'
-    compile 'io.micrometer:micrometer-spring-legacy:1.0.3'
-    compile 'io.micrometer:micrometer-registry-prometheus:1.0.3'  // You should add this line for prometheus.
+    compile 'io.micrometer:micrometer-spring-legacy:1.0.5'
+    compile 'io.micrometer:micrometer-registry-prometheus:1.0.5'  // You should add this line for prometheus.
     ...
 ```
 
-You can start a sample project of Spring Boot (Ver.2.0.1) with this `proto` folder outside of containers.
+You can start a sample project of Spring Boot (Ver.2.0.3) with this `proto` folder outside of containers.
