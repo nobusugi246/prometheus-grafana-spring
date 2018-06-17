@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        springBootVersion = '1.5.12.RELEASE'
+        springBootVersion = '1.5.14.RELEASE'
     }
     repositories {
         mavenCentral()
@@ -11,7 +11,7 @@ buildscript {
 }
 
 plugins {
-  id "com.github.ben-manes.versions" version "0.17.0"
+  id "com.github.ben-manes.versions" version "0.19.0"
 }
 
 apply plugin: 'java'
@@ -28,8 +28,8 @@ repositories {
 dependencies {
     compile 'org.springframework.boot:spring-boot-starter-web'
     compile 'org.springframework.boot:spring-boot-starter-actuator'
-    compile 'io.micrometer:micrometer-spring-legacy:1.0.3'
-    compile 'io.micrometer:micrometer-registry-prometheus:1.0.3'
+    compile 'io.micrometer:micrometer-spring-legacy:1.0.5'
+    compile 'io.micrometer:micrometer-registry-prometheus:1.0.5'
 
     testCompile 'org.springframework.boot:spring-boot-starter-test'
 }

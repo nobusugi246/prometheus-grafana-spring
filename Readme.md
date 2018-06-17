@@ -60,9 +60,9 @@ Spring Boot Configuration
 dependencies {
     ...
     compile 'org.springframework.boot:spring-boot-starter-actuator'
-    compile 'io.micrometer:micrometer-spring-legacy:1.0.3'
-    compile 'io.micrometer:micrometer-registry-prometheus:1.0.3'  // You should add this line for prometheus.
+    compile 'io.micrometer:micrometer-spring-legacy:1.0.5'
+    compile 'io.micrometer:micrometer-registry-prometheus:1.0.5'  // You should add this line for prometheus.
     ...
 ```
 
-You can start a sample project of Spring Boot (Ver.1.5.12) with this `proto` folder outside of containers.
+You can start a sample project of Spring Boot (Ver.1.5.14) with this `proto` folder outside of containers.
