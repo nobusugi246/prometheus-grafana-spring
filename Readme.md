@@ -12,14 +12,14 @@ You can start Prometheus and Grafana Containers with this docker-compose.yml.
 version: '3'
 services:
   prometheus:
-    image: prom/prometheus:v2.3.0
+    image: prom/prometheus:v2.3.1
     container_name: prometheus
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
     ports:
       - 9090:9090
   grafana:
-    image: grafana/grafana:5.1.3
+    image: grafana/grafana:5.2.1
     container_name: grafana
     ports:
       - 3000:3000
