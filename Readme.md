@@ -12,7 +12,7 @@ You can start Prometheus and Grafana Containers with this docker-compose.yml.
 version: '3'
 services:
   prometheus:
-    image: prom/prometheus:v2.3.1
+    image: prom/prometheus:v2.3.2
     container_name: prometheus
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
@@ -60,8 +60,8 @@ Spring Boot Configuration
 dependencies {
     ...
     compile 'org.springframework.boot:spring-boot-starter-actuator'
-    compile 'io.micrometer:micrometer-spring-legacy:1.0.5'
-    compile 'io.micrometer:micrometer-registry-prometheus:1.0.5'  // You should add this line for prometheus.
+    compile 'io.micrometer:micrometer-spring-legacy:1.0.6'
+    compile 'io.micrometer:micrometer-registry-prometheus:1.0.6'  // You should add this line for prometheus.
     ...
 ```
 
