@@ -13,38 +13,38 @@ scrape_configs:
       - targets: 
         - 'localhost:9090'
   - job_name: 'spring'
-    metrics_path: '/prometheus'
+    metrics_path: '/actuator/prometheus'
     static_configs:
       - targets:
         - 'docker.for.mac.host.internal:8080'
 
   - job_name: 'admin'
-    metrics_path: '/prometheus'
+    metrics_path: '/actuator/prometheus'
     static_configs:
       - targets:
         - 'docker.for.mac.host.internal:8110'
   - job_name: 'contents'
-    metrics_path: '/prometheus'
+    metrics_path: '/actuator/prometheus'
     static_configs:
       - targets:
         - 'docker.for.mac.host.internal:8200'
   - job_name: 'discovery'
-    metrics_path: '/prometheus'
+    metrics_path: '/actuator/prometheus'
     static_configs:
       - targets:
         - 'docker.for.mac.host.internal:8100'
   - job_name: 'frontend'
-    metrics_path: '/prometheus'
+    metrics_path: '/actuator/prometheus'
     static_configs:
       - targets:
         - 'docker.for.mac.host.internal:8201'
   - job_name: 'gw'
-    metrics_path: '/prometheus'
+    metrics_path: '/actuator/prometheus'
     static_configs:
       - targets:
         - 'docker.for.mac.host.internal:8000'
   - job_name: 'zipkin-server'
-    metrics_path: '/prometheus'
+    metrics_path: '/actuator/prometheus'
     static_configs:
       - targets:
         - 'docker.for.mac.host.internal:9411'
