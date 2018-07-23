@@ -17,7 +17,6 @@ scrape_configs:
     static_configs:
       - targets:
         - 'docker.for.mac.host.internal:8080'
-
   - job_name: 'admin'
     metrics_path: '/prometheus'
     static_configs:
@@ -48,3 +47,7 @@ scrape_configs:
     static_configs:
       - targets:
         - 'docker.for.mac.host.internal:9411'
+  - job_name: "node"
+    static_configs:
+      - targets: 
+        - 'exporter:9100'
