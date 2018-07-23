@@ -14,3 +14,7 @@ services:
       - 3000:3000
     env_file:
       - ./grafana.env
+  exporter:
+    image: prom/node-exporter:latest
+    ports:
+      - "9100:9100"
