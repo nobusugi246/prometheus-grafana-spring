@@ -19,7 +19,7 @@ services:
     ports:
       - 9090:9090
   grafana:
-    image: grafana/grafana:5.2.1
+    image: grafana/grafana:5.2.2
     container_name: grafana
     ports:
       - 3000:3000
@@ -64,4 +64,4 @@ dependencies {
     ...
 ```
 
-You can start a sample project of Spring Boot (Ver.2.0.3) with this `proto` folder outside of containers.
+You can start a sample project of Spring Boot (Ver.2.0.4) with this `proto` folder outside of containers.
