@@ -1,5 +1,5 @@
 plugins {
-    id 'org.springframework.boot' version '2.0.3.RELEASE'
+    id 'org.springframework.boot' version '2.0.4.RELEASE'
     id 'com.github.ben-manes.versions' version '0.20.0'
 }
 
